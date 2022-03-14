@@ -13,24 +13,31 @@
 			<div id="main">
 				<h2>Cryptography Tool</h2>
 				<div id="encrypt">
-                    <h6>Encrypt your text here</h6>
-					<form action="">
-                        <label for="user-input">Plaintext</label>
+					<h6>Encrypt your text here</h6>
+					<form>
+						<label for="user-input">Plaintext</label>
 						<textarea id="user-input" rows="6"></textarea>
-                        <label for="user-key">Encryption Key</label>
-						<input name="user-key" id="user-key" type="password" required/>
+						<label for="user-key">Encryption Key</label>
+						<input name="user-key" id="user-key" type="password" required />
 						<button id="submit-text">Encrypt</button>
 					</form>
 				</div>
-                <div id="decrypt">
-                    <h6>Decrypt your text here</h6>
-                    <input name="user-key-output" id="user-key-output" type="password" required />
-                    <textarea name="output" id="output" rows="6"></textarea>
-                    <button id="decrypt-button" class="secondary">Decrypt</button>
-                </div>
+				<div id="decrypt">
+					<form>
+						<h6>Decrypt your text here</h6>
+						<input
+							name="user-key-output"
+							id="user-key-output"
+							type="password"
+							required
+						/>
+						<textarea name="output" id="plaintext-output" rows="6"></textarea>
+						<button id="decrypt-button" class="secondary">Decrypt</button>
+					</form>
+				</div>
 			</div>
 			<div></div>
 		</div>
 	</body>
-    <script src="index.js"></script>
+	<script src="index.js"></script>
 </html>
